@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<plate>
+	<!-- About Typesettings -->
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="title" name_friendly="Lead in Title" required="1" />
+				<wysiwyg_advanced name="content" name_friendly="Intro Text" />
+				<images name="image" name_friendly="Main Image" list="1" limit="1" />
+			</fields>
+			
+			<items>
+				<item link_title="Homepage" path_part="zesty_home">
+					<title><![CDATA[This is Typography]]></title>
+					<content><![CDATA[<p><strong>Typography</strong> (<em>from the Greek words &tau;ύ&pi;&omicron;&sigmaf; (typos) = form and &gamma;&rho;&alpha;&phi;ή (graphe) = writing</em>) is the art and technique of arranging type in order to make language visible. The arrangement of type involves the selection of typefaces, point size, line length, leading (line spacing), adjusting the spaces between groups of letters (tracking) and adjusting the space between pairs of letters (kerning). Type design is a closely related craft, which some consider distinct and others a part of typography; most typographers do not design typefaces, and some type designers do not consider themselves typographers. In modern times, typography has been put into motion&mdash;in film, television and online broadcasts&mdash;to add emotion to mass communication.</p>]]></content>
+					<image><![CDATA[https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-cylinder-heidelberg-2000.jpg]]></image>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+	
+	<!-- clippings -->	
+	<clippings>
+		<text name="site_name" name_friendly="Site Name" required="1"><![CDATA[Typography]]></text>
+		<images name="logo" name_friendly="Site Logo" limit="1"><![CDATA[]]></images>
+		<text name="footer_text" name_friendly="Footer Text"><![CDATA[Footer text can be updated in Content Clippings]]></text>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID" />
+	</clippings>
+	
+
+	<!-- head files -->	
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" />
+		
+		<googlefont family="PT Serif Caption" />
+	</head>
+
+</plate>

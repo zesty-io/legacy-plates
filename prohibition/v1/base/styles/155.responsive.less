@@ -1,0 +1,67 @@
+
+/* our usual structure width that starts changing page width */
+@media screen and (max-width: @container-max-width) {
+	.header {
+		ul#nav {
+			li {
+				a {
+					padding: 0px 20px;
+				}
+			}
+		}
+	}
+}
+
+/* ipads portrait */
+@media screen and (max-width: 768px) {
+	.header {
+		height: auto;
+		
+		a.logo {
+			position: relative;
+			width: 120px;
+			left: auto;
+			margin: 0px auto;
+			top: 0px;
+			display: block;
+			
+			img {
+				width: auto;
+			}
+		}
+		
+		ul#nav {
+			margin-top: 10px;
+			
+			li {
+				padding: inherit !important;
+				a {
+					padding: 0px 30px !important;
+				}
+			}
+		}
+	}
+}
+
+/* iphones landscape */
+@media screen and (max-width: 480px) {
+	.squares {
+		
+		.square {
+			border: none !important;
+		}
+	}
+}
+
+/* most android 720p screens landscape */
+@media screen and (max-width: 360px) {
+
+}
+
+/* iphones portrait */
+@media screen and (max-width: 320px) {
+
+}
+
+
+

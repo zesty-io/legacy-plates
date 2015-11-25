@@ -1,0 +1,226 @@
+
+
+// prohibition plate main less file
+
+/* prohibition z-container addtional css to add space around the website  */
+.z-container{ 
+	padding: 0px @default-spacing;
+}
+
+.structure {
+	max-width: @container-max-width;
+	margin: 0px auto;
+}
+
+/* prohibition header */
+
+.header {
+	min-height: 60px;
+	margin-bottom: 10px;
+	height: 200px;
+	
+	a.logo {
+		position: absolute;
+		left: 50%;
+		top: 50px;
+		margin-left: -60px;
+		width: 120px;
+		
+		img {
+			width: 100%;	
+		}
+	}
+
+	ul#nav { 
+		margin: 0px;
+		margin-top: 50px;
+		padding: 0px;
+		line-height: 0px;
+		text-align: center;
+		
+		li { 
+			
+			&:nth-child(2) {
+				padding-right: 80px;
+			}
+			
+			&:nth-child(3) {
+				padding-left: 80px;
+			}
+		}
+	}
+	
+	.social-links {
+		float: right;
+	}
+}
+
+.squares {
+	margin: 30px 0px;
+	color: @z-background-secondary-color;
+	text-align: center;
+	
+	.z-row > div {
+		
+		.square {
+			border-left: 1px solid @accent-color;
+			padding: 0px 4%;
+		}
+		
+		&:first-child {
+			.square {
+				border: none;
+			}
+		}	
+	}
+
+	img {
+		display: none;
+	}
+	
+	a {
+		.addButtonStyles();
+	}
+}
+
+/* prohibition content  */
+.content {
+	min-height: @default-spacing*20;
+	padding-bottom: @default-spacing*4;
+
+	img[align=left]{
+		margin-right: @default-spacing / 2;
+		max-width: 50%;
+	}
+	
+
+	/* horizontal rule */
+	hr{
+		border-top: none;	
+	}
+	
+}
+
+/* prohibition footer  */
+
+.footer { 
+	background-color: @accent-color;
+	height: 45px;
+	line-height: 45px;
+	
+	.links{
+		a {
+			color: @z-background-primary-color;
+			font-family: @z-header-font;
+			text-decoration: none;
+			border-right: 1px solid;
+			padding: 0px 15px;
+			margin-right: 15px;
+			
+			&:first-child {
+				margin-right: 0px;
+			}
+		}
+	}
+	
+	.copyright {
+		text-align: right;
+		font-size: 12px;
+		.magic-inverse-color(@accent-color, 20%);
+	}
+}
+
+// prohibition clear
+
+.clear,.floatfix{ 
+	clear:both
+}
+
+// prohibition 404 page styling
+
+.page404 { 
+	
+	form{
+		input[type=text]{
+			width: 60%;
+		}
+		input[type=submit]{
+			display:block;
+			margin-top: 10px;
+		}
+	}
+}
+
+/********************************************
+	nivo slider overrides
+*********************************************/
+
+.nivo-caption {
+	display: none !important;
+	position:absolute;
+	left:@default-spacing;
+	bottom:@default-spacing;
+	background:darken(@body-bg-color,75%);
+	width:38%;
+	z-index:8;
+	
+	padding: @default-spacing;
+	@media screen and (max-width:620px) { padding: (@default-spacing/2); }
+	.border-radius(@default-border-radius);
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	h2{
+		font-size: @h2-font-size;
+		margin-bottom:(@h2-font-size / 3);
+		padding: 0px;
+		color:lighten(@h2-font-color,75%);
+		
+	}
+	span{
+		color:lighten(@paragraph-font-color,75%);
+		padding-top: (@default-spacing/2);
+		line-height:@paragraph-line-height;
+		font-size:@paragraph-font-size;
+		
+		@media screen and (max-width:620px) {
+			display: none;
+		}
+	}
+	
+}
+
+
+.nivo-prevNav,.nivo-nextNav {
+	display: none;	
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: (@default-spacing/4) 0px;
+	
+}
+.nivo-controlNav a {
+	.transition(all 250ms ease);
+	cursor:pointer;
+	text-indent: -9999px;
+	width: 100px;
+	background-color: #999;
+	height: 4px;	
+	margin-right:5px;
+	float:left;
+	display: inline-block;
+	&:hover{
+		background-color: #666;
+	}	
+}
+
+.nivo-controlNav a.active {
+	background-color: #333;
+}

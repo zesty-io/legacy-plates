@@ -1,0 +1,133 @@
+@network-height: 28px;
+@tablet-break: 1200px;
+@mobile-break: 600px;
+@site-color: @zesty-orange;
+@sidebar-bg-color: lighten(desaturate(@site-color,2%),30%);
+
+body{
+	padding-top: ( @network-height * 2.5) + @network-height;	
+	
+	@media all and (max-width: @mobile-break){
+		padding-top: @network-height * 1.5;	
+	}
+	// mobile break compenstates for the hamburger fins
+}
+.network-bar{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: @network-height;
+	width: 100%;
+	background: @zesty-dark-blue;
+	border-top: 2px @site-color solid;
+	z-index: 10;
+	//box-shadow: 0px -1px 5px fade(black,50%);
+//	border-bottom: 2px @zesty-green solid;	
+	@media all and (max-width: @mobile-break){
+		position: static;	
+		top: auto;
+		height: 110px;
+		padding-bottom: 10px;
+		border-top-width: 0px;
+	}
+	
+	img.network-logo{
+		height: 20px;
+		padding: 3px 4px;
+		float: left;
+		@media all and (max-width: @mobile-break){
+			float: right;
+			height: 90px;
+			opacity: .1;
+			margin-right: 10px;
+			margin-top: 5px;
+		}
+	}
+	.network-links{
+		display: block;
+		height: @network-height;
+		@media all and (max-width: @mobile-break){
+			height: auto;
+		}
+		
+		span.divider{
+			color:	darken( @zesty-tab-blue,30%);
+			@media all and (max-width: @mobile-break){
+				display:none;
+			}
+		}
+		
+		a{
+			display: inline-block;
+			padding: 0px 10px;
+			height: @network-height;
+			line-height: @network-height;
+			color: @zesty-tab-blue;
+			text-transform: uppercase;
+			font-size: 10px;
+			letter-spacing: 1px;
+			font-weight: 400; 
+			font-family: @font;
+			// hides the text
+			@media all and (max-width: @mobile-break){
+				display: block;
+			}
+			
+			&:hover{
+				color: white;
+			}
+			
+			&.network-location{
+				color: white;	
+				background-color: @site-color;
+				@media all and (max-width: @mobile-break){
+					background-color: transparent;
+					display: block;
+				}
+			}
+		}
+		
+	}
+}
+.site-wrap{
+	position: static;	
+	overflow: hidden;
+	@media all and (max-width: @mobile-break){
+		position: relative;	
+	}
+}
+
+.navigation-controller{
+	position: static;
+	z-index:10px;
+	
+	
+	
+	.append-to-network-nav{
+		display: none;
+	}	
+	
+	.transition(all 250ms ease);
+	
+	@media all and (max-width: @mobile-break){
+		
+		background: black;
+		width: 80%;
+		position: fixed;
+		left: -80%;
+		top:0px;
+		bottom: 0px;
+		height: 100%;
+		overflow-y: scroll;
+		z-index: 50;
+		.append-to-network-nav{
+			display: block !important;
+		}
+		&.expand{
+			left: 0%;
+			box-shadow: 0px 0px 15px fade(black,50%);
+		}
+		
+	}
+	
+}

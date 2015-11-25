@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+		<googlefont family="Droid Sans"/>
+		<googlefont family="Open Sans"/>
+	</head>
+	
+	<clippings>
+		<text name="site_name" name_friendly="Site Name">blocks</text>
+		<images name="logo" name_friendly="Site Logo" limit="1">27</images>
+		<text name="copyright" name_friendly="Copyright Text">Copyright &#xA9;2013. All Rights Reserved. Blocks is a Zesty Plate!</text>
+		<text name="about_header" name_friendly="The About Header in the footer">About</text>
+		<textarea name="about_text" name_friendly="The About Text in the footer">About the company</textarea>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"></text>
+		<images name="link_arrow" name_friendly="Link Arrow">29</images>
+	</clippings>
+	
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="title" name_friendly="Title" required="1"/>
+				<textarea name="opening_paragraph" name_friendly="Opening paragraph"/>
+				<images name="image_one" name_friendly="image one"/>
+				<images name="image_two" name_friendly="Image two"/>
+				<images name="small_one" name_friendly="small one"/>
+				<images name="small_two" name_friendly="small two"/>
+				<images name="small_three" name_friendly="small three"/>
+				<images name="small_four" name_friendly="small four"/>
+				<text name="second_title" name_friendly="Second Title"/>
+				<textarea name="second_paragraph" name_friendly="Second Paragraph"/>
+				<images name="small_five" name_friendly="small five"/>
+				<images name="small_six" name_friendly="small six"/>
+				<images name="small_seven" name_friendly="small seven"/>
+				<images name="small_eight" name_friendly="small eight"/>
+				<text name="third_title" name_friendly="Third Title"/>
+				<text name="fourth_title" name_friendly="Fourth Title"/>
+				<text name="fifth_title" name_friendly="Fifth Title"/>
+				<textarea name="fifth_paragraph" name_friendly="Fifth Paragraph"/>
+				<text name="sixth_title" name_friendly="Sixth title"/>
+				<textarea name="sixth_paragraph" name_friendly="Sixth Paragraph"/>
+				<text name="seventh_title" name_friendly="Seventh Title"/>
+				<textarea name="seventh_paragraph" name_friendly="Seventh Paragraph"/>
+				<text name="view_portfolio_text" name_friendly="View Portfolio Header" required="1"/>
+			</fields>
+			<items>
+				<item link_title="Homepage" path_part="zesty_home">
+					<title><![CDATA[Say Hello to Blocks!]]></title>
+					<opening_paragraph>
+						<![CDATA[Blocks is a mobile responsive Zesty plate. It is geometric and fun. It's starting recipes can work for a variety of businesses like restaurants, web development companies, and artists.]]>
+					</opening_paragraph>
+					<image_one>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-peppers.jpg</image_one>
+					<image_two>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-beauty.jpg</image_two>
+					<small_one>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-one1.jpg</small_one>
+					<small_two>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-two.jpg</small_two>
+					<small_three>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-three.jpg</small_three>
+					<small_four>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-four.jpg</small_four>
+					<second_title><![CDATA[What's on our Menu?]]></second_title>
+					<second_paragraph>
+						<![CDATA[You could utilize this space to describe main points of topic such as, items for a menu or bio statements for a portfolio. The arrow leads you in to the main page of this section (also found in the navigation) where you can expand more on your topic.
+]]>
+					</second_paragraph>
+					<small_five>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-five.jpg</small_five>
+					<small_six>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-six.jpg</small_six>
+					<small_seven>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-seven.jpg</small_seven>
+					<small_eight>https://3e48657fa8b84cd51584-3a1b5f508a9841e4431f893a57c47ac2.ssl.cf2.rackcdn.com/or-eight.jpg</small_eight>
+					<third_title>Location</third_title>
+					<fourth_title>Hours</fourth_title>
+					<fifth_title>We have you covered!</fifth_title>
+					<fifth_paragraph>
+						<![CDATA[Try out this new, mobile responsive Zesty plate filled with your own personal or professional content!]]>
+					</fifth_paragraph>
+					<sixth_title><![CDATA[Need a great gift?]]></sixth_title>
+					<sixth_paragraph>
+						<![CDATA[Need a new website for your Restaurant? Portfolio? or Business? Take it anywhere with this mobile responsive layout.]]>
+					</sixth_paragraph>
+					<seventh_title><![CDATA[What are we about?]]></seventh_title>
+					<seventh_paragraph>
+						<![CDATA[Blocks. is a fun, clean, and professional way to manage your website content.]]>
+					</seventh_paragraph>
+					<view_portfolio_text>View The Portfolio</view_portfolio_text>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>

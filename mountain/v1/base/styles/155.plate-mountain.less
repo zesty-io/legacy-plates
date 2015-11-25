@@ -1,0 +1,256 @@
+
+.side-bar{
+	padding: @sidebar-padding;
+	background-color: @sidebar-bg-color;
+	.border-radius(@sidebar-border-radius);	
+	border: 1px @sidebar-border-color solid;
+}
+
+.z-container { 
+	max-width: @container-max-width; 
+	padding: 50px @default-spacing;
+	background-color: @content-bg-color;
+	margin: 0px auto;
+}
+
+.structure { 
+	clear:both;
+	padding: 0px;
+	position: relative;
+	max-width: @container-max-width;
+	background: @content-bg-color;
+	margin: 0px auto;
+}
+
+.page-content{
+	padding: 0px @default-spacing;	
+}
+
+/* header  */
+
+.header {
+	
+	ul#nav {
+		float: right;
+		width: auto;
+		display: block;
+		margin-top: 30px;
+	}
+	
+	
+	
+	min-height: @btn-height*2;
+	background-color: transparent;
+	background-size: cover;
+	
+	.title{
+		padding: left;
+	}
+	
+	
+	a.logo {
+		float:left;
+		padding: left;
+		img { 
+			width: 100%; 
+			max-width:@logo-max-width;
+			
+		}	
+		&:hover {
+			img {
+				.opacity(70);
+			}
+		}
+	}
+}
+
+.header-container{
+	background-size: 1275px 136px;
+	background-repeat: no-repeat;
+	
+	
+}
+
+.members{
+	&:hover {
+		img {
+			.opacity(0);
+		}
+	}
+}
+
+
+.z-row{
+	.quote{
+		text-align: center;
+	}
+}
+
+.image { 
+	position: relative; 
+	width: 100%; 
+}
+
+h4 {
+	color: @h4-font-color;
+	padding: 6px;
+	
+}
+.container {
+	width: 100%;
+	background-color: @nav-font-color;
+
+	h4.title{
+		text-align: left;
+		vertical-align: middle;
+		margin: 0px;
+	}
+	
+}
+
+
+/* footer  */
+.footer-container{
+	background-color: @content-bg-color;
+	max-width: @container-max-width;
+	padding: 0%;
+	margin: 0px auto;
+	
+}
+
+.triangle-container{
+
+	padding-top: 55px;
+	min-height: 110px;
+	width: 100%;
+	background-size: cover;
+	vertical-align: middle;
+
+}
+
+
+.social-links{
+	text-align: center;
+	top-align: 100px;
+}
+
+.contact{
+	text-align: baseline;
+	font-size: @table-font-size;
+	font-family: @default-font;
+	padding: 10px;
+	text-align: center;
+	color: grey;
+	
+}
+
+
+.info{
+	text-align: center;
+	font-size: @nav-font-size;
+	color: grey;
+	
+	
+}
+
+/* navigation  */
+/* navigation container */
+
+
+/* footer copyright */
+.copyright { 
+	clear: both; 
+	text-align: center; 
+	font-size: 10px; 
+	padding: (@default-spacing*1.5) 0px (@default-spacing/2) 0px; 
+}
+
+
+// primary elements
+
+// social icons
+
+
+
+// nivo modifications
+
+
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:darken(@body-bg-color,75%);
+	width:100%;
+	max-width: 100%;	
+	height: 100px;
+	z-index:8;
+	.border-radius(0px);
+	padding: @default-spacing;
+	@media screen and (max-width:620px) { display:hidden; }
+	
+	.opacity(80);
+	overflow: hidden;
+	display: none;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	h2{
+		font-size: @h2-font-size / 1.3;
+		margin-bottom:(@h2-font-size / 2);
+		padding: 0px;
+		color:lighten(@h2-font-color,75%);
+		
+	}
+	span{
+		color:lighten(@paragraph-font-color,75%);
+		padding-top: (@default-spacing/2);
+		line-height:@paragraph-line-height;
+		font-size:@paragraph-font-size;
+		
+		@media screen and (max-width:620px) {
+			display: none;
+		}
+	}
+	
+}
+
+
+.nivo-prevNav,.nivo-nextNav {
+	display: none;	
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 0px;
+	width: 100%;
+	.transistion(none);
+	height: @default-spacing * 1.5;
+	line-height: @default-spacing * 1.5;
+	
+	a {
+		cursor:pointer;
+		margin-right:5px;
+		
+		&:hover{
+			background-color: darken(@accent-color,20%);
+		}
+		span{
+			display:none;	
+		}
+	}
+	
+	a.active {
+		
+	}
+}
+// clear
+
+.clear,.floatfix{ 
+	clear:both
+}
+
+.page404 { 
+	text-align: center; 
+}

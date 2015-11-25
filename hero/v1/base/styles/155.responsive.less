@@ -1,0 +1,89 @@
+/* our usual structure width that starts changing page width */
+@media screen and (max-width: @container-max-width) {
+	.header-container {
+		position: relative;
+		background-color: @nav-bg-color;
+		.header {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+
+
+/* ipads portrait */
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 480px) {
+	.navigation {
+		display: block !important;
+		height: auto !important;
+	}
+}
+
+/* iphones landscape */
+@media screen and (max-width: 480px) {
+	.header {
+		a.logo {
+			max-width: 82%;
+			margin-top: 0px;
+		}
+	}
+	
+	#toggle-nav {
+		display: block;
+		color: @nav-font-color;
+		float: right;
+		font-size: 30px;
+		position: absolute;
+		z-index: 10000;
+		top: 30px;
+		right: 20px;
+	}
+	
+	.navigation {
+		display: none;
+		overflow: hidden;
+		margin-top: 15px;
+		width: 100%;
+		
+		#nav.nav {
+			margin-top: 20px;
+			clear:both ;
+			display:block ;
+			position: relative ;
+			float:none ;
+			height: auto ;
+			width: 100% ;
+		}
+	
+		#nav.nav li a,
+		#nav.nav li {
+			width: 100% ;
+			font-size: 14px ;
+			line-height: 30px ;
+			height: 30px ;
+			border: none ;
+			//border-bottom: 1px lighten(@content-bg-color, 5%) solid ;
+			display:block ;
+			position: relative ;
+			float:none;
+			padding: 0px;
+			text-indent: 10px;
+		}
+	
+		#nav li ul{ display: none;}
+	}
+}
+
+/* most android 720p screens landscape */
+@media screen and (max-width: 360px) {
+
+}
+
+/* iphones portrait */
+@media screen and (max-width: 320px) {
+
+}

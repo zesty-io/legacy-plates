@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+		<googlefont family="ABeeZee"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name"><![CDATA[Hero]]></text>
+		<images name="logo" name_friendly="Site Logo" limit="1">
+			<![CDATA[https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-hero-logo.png]]>
+		</images>
+		<text name="footer_text" name_friendly="Footer Text">
+			<![CDATA[Footer text can be updated in Content Clippings]]>
+		</text>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"><![CDATA[]]></text>
+		<text name="top_link_1_url" name_friendly="Top Link 1 URL"><![CDATA[#]]></text>
+		<text name="top_link_1_text" name_friendly="Top Link 1 Text"><![CDATA[About]]></text>
+		<text name="top_link_2_url" name_friendly="Top Link 2 URL"><![CDATA[#]]></text>
+		<text name="top_link_2_text" name_friendly="Top Link 2 Text"><![CDATA[Contact]]></text>
+		<text name="footer_about_title" name_friendly="Footer About Title"><![CDATA[About a Hero]]></text>
+		<textarea name="footer_about_text" name_friendly="Footer About Text"><![CDATA[A hero is a person who is admired for courage or noble qualities.]]></textarea>
+		<text name="footer_form_title" name_friendly="Footer Form Title"><![CDATA[Contact a Hero]]></text>
+		<text name="footer_form_label" name_friendly="Footer Form Label"><![CDATA[Please provide your email address...]]></text>
+		<images name="header_texture_image" name_friendly="Header Texture Image" limit="1">
+			<![CDATA[https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-cannibal-tree-sliver-by-jan-tik.jpg]]>
+		</images>
+	</clippings>
+	
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="title" name_friendly="Lead in Title" required="1"/>
+				<wysiwyg_advanced name="content" name_friendly="Intro Text"/>
+				<images name="image" name_friendly="Main Image" limit="1"/>
+			</fields>
+			
+			<items>
+				<item link_title="Homepage" path_part="zesty_home">
+					<title><![CDATA[Homepage]]></title>
+					<content><![CDATA[<p>There can be a lot of content you could potentially put on your homepage, but you must start simple.</p>
+	<h2>What Does Your Company Do?</h2><p>A user should be able to figure this one out in under three seconds. If they can&rsquo;t you aren&rsquo;t doing it right. If you sell a specific product it needs to be right there on the homepage.</p>
+	<h2>How Do You Do It</h2><p>You&rsquo;re either cheap, or fast, or high quality, or green, or something else, but you need to let customers know. Say what you do (question one) and then how you do it. People don&rsquo;t have the time online for a sales pitch so just put it out there as simply and succinctly as possible.</p>
+	<h2>How Are You Different?</h2><p> Why would a visitor chose you over the competition?</p>]]></content>
+					<image><![CDATA[https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-photo-by-ksayer1.jpg]]></image>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>

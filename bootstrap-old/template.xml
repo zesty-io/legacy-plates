@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<template>
+	<version>1.0</version>
+	<name>bootstrap</name>
+	<name_friendly>Twitter Bootstrap</name_friendly>
+	<description>It's back on Zesty and more powerful than ever. This version of twitter bootstrap is packaged with the base css, javascript, and html scaffolding. Outside of a header and footer snippet, no other views are created. Based on twitter bootstrap: http://twitter.github.com/bootstrap/ </description>
+	<author>Twitter Team</author>
+	<link>http://twitter.github.com/bootstrap/</link>
+	<image src="https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-twitter-bootstrap.png" />
+	
+	<sort>5</sort>
+	<less>true</less>
+	
+	<views>
+		<!-- loader -->
+		<view type="loader" name="loader" file="/views/loader.tpl" />	
+		
+		<!-- header -->	
+		<view type="snippet" name="header" file="/views/header.tpl" />	
+		
+		<view type="404" name="404-page" file="/views/404.tpl" />
+		
+	</views>
+	
+	<homepage>
+		<fields>
+			<field name="title" name_friendly="Lead in Title" datatype="text" required="1">
+				<![CDATA[Your Homepage]]>
+			</field>
+			<field name="content" name_friendly="Intro Text" datatype="wysiwyg_advanced">
+				<![CDATA[<div class="bs-docs-example">
+            <h1>h1. Heading 1</h1>
+            <h2>h2. Heading 2</h2>
+            <h3>h3. Heading 3</h3>
+            <h4>h4. Heading 4</h4>
+            <h5>h5. Heading 5</h5>
+            <h6>h6. Heading 6</h6>
+          </div>
+<p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+<p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+<address>
+  <strong>Twitter, Inc.</strong><br />
+  795 Folsom Ave, Suite 600<br />
+  San Francisco, CA 94107<br />
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+ 
+<address>
+  <strong>Full Name</strong><br />
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+<div class="bs-docs-example">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Product</th>
+                  <th>Payment Taken</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="success">
+                  <td>1</td>
+                  <td>TB - Monthly</td>
+                  <td>01/04/2012</td>
+                  <td>Approved</td>
+                </tr>
+                <tr class="error">
+                  <td>2</td>
+                  <td>TB - Monthly</td>
+                  <td>02/04/2012</td>
+                  <td>Declined</td>
+                </tr>
+                <tr class="warning">
+                  <td>3</td>
+                  <td>TB - Monthly</td>
+                  <td>03/04/2012</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="info">
+                  <td>4</td>
+                  <td>TB - Monthly</td>
+                  <td>04/04/2012</td>
+                  <td>Call in to confirm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<form>
+  <fieldset>
+    <legend>Legend</legend>
+    <label>Label name</label>
+    <input type="text" placeholder="Type something&hellip;">
+    <span class="help-block">Example block-level help text here.</span>
+    <label class="checkbox">
+      <input type="checkbox"> Check me out
+    </label>
+    <button type="submit" class="btn">Submit</button>
+  </fieldset>
+</form>
+<form class="form-search">
+  <div class="input-append">
+    <input type="text" class="span2 search-query">
+    <button type="submit" class="btn">Search</button>
+  </div>
+  <div class="input-prepend">
+    <button type="submit" class="btn">Search</button>
+    <input type="text" class="span2 search-query">
+  </div>
+</form>
+<form class="bs-docs-example" style="padding-bottom: 15px;">
+            <div class="controls">
+              <input class="span5" type="text" placeholder=".span5">
+            </div>
+            <div class="controls controls-row">
+              <input class="span4" type="text" placeholder=".span4">
+              <input class="span1" type="text" placeholder=".span1">
+            </div>
+            <div class="controls controls-row">
+              <input class="span3" type="text" placeholder=".span3">
+              <input class="span2" type="text" placeholder=".span2">
+            </div>
+            <div class="controls controls-row">
+              <input class="span2" type="text" placeholder=".span2">
+              <input class="span3" type="text" placeholder=".span3">
+            </div>
+            <div class="controls controls-row">
+              <input class="span1" type="text" placeholder=".span1">
+              <input class="span4" type="text" placeholder=".span4">
+            </div>
+          </form>
+<form class="bs-docs-example form-horizontal">
+            <div class="control-group warning">
+              <label class="control-label" for="inputWarning">Input with warning</label>
+              <div class="controls">
+                <input type="text" id="inputWarning">
+                <span class="help-inline">Something may have gone wrong</span>
+              </div>
+            </div>
+            <div class="control-group error">
+              <label class="control-label" for="inputError">Input with error</label>
+              <div class="controls">
+                <input type="text" id="inputError">
+                <span class="help-inline">Please correct the error</span>
+              </div>
+            </div>
+            <div class="control-group info">
+              <label class="control-label" for="inputInfo">Input with info</label>
+              <div class="controls">
+                <input type="text" id="inputInfo">
+                <span class="help-inline">Username is taken</span>
+              </div>
+            </div>
+            <div class="control-group success">
+              <label class="control-label" for="inputSuccess">Input with success</label>
+              <div class="controls">
+                <input type="text" id="inputSuccess">
+                <span class="help-inline">Woohoo!</span>
+              </div>
+            </div>
+          </form>
+<table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button type="button" class="btn">Default</button></td>
+                <td><code>btn</code></td>
+                <td>Standard gray button with gradient</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-primary">Primary</button></td>
+                <td><code>btn btn-primary</code></td>
+                <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-info">Info</button></td>
+                <td><code>btn btn-info</code></td>
+                <td>Used as an alternative to the default styles</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-success">Success</button></td>
+                <td><code>btn btn-success</code></td>
+                <td>Indicates a successful or positive action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-warning">Warning</button></td>
+                <td><code>btn btn-warning</code></td>
+                <td>Indicates caution should be taken with this action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-danger">Danger</button></td>
+                <td><code>btn btn-danger</code></td>
+                <td>Indicates a dangerous or potentially negative action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-inverse">Inverse</button></td>
+                <td><code>btn btn-inverse</code></td>
+                <td>Alternate dark gray button, not tied to a semantic action or use</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-link">Link</button></td>
+                <td><code>btn btn-link</code></td>
+                <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+              </tr>
+            </tbody>
+          </table>
+<div class="bs-docs-example bs-docs-example-images">
+            
+<img data-src="holder.js/140x140" class="img-rounded" alt="140x140" style="width: 140px; height: 140px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAFjklEQVR4Xu3Xx0skfRDG8TJnFEXEg4oJvIgZxYT/ujmsIgZEwXgUdRRzdqmGEfUg1rulOPV++za7ZfXUUx9+3ZOVSqVehIsEvphAFmC+mBRlSQKAAYIpAcCY4qIYMBgwJQAYU1wUAwYDpgQAY4qLYsBgwJQAYExxUQwYDJgSAIwpLooBgwFTAoAxxUUxYDBgSgAwprgoBgwGTAkAxhQXxYDBgCkBwJjiohgwGDAlABhTXBQDBgOmBABjiotiwGDAlABgTHFRDBgMmBIAjCkuigGDAVMCgDHFRTFgMGBKADCmuCgGDAZMCQDGFBfFgMGAKQHAmOKiGDAYMCUAGFNcFAMGA6YEAGOKi2LAYMCUAGBMcVEMGAyYEgCMKS6KAYMBUwKAMcVFMWAwYEoAMKa4KAYMBkwJAMYUF8WAwYApAcCY4qIYMBgwJQAYU1wUAwYDpgQAY4qLYsBgwJQAYExxUQwYDJgSAIwpLooBgwFTAoAxxUUxYDBgSgAwprgoBgwGTAlkPJi9vT05ODiQgYEBKSwsfDd8KpWSjY0NKS4ulq6uLsnKypKXlxdZX1+X4+Pj5HNTU5PU19d/ObSfvt+Xv9gPFWYsmLOzM1EQu7u7SVRDQ0NSVFT0GpvCGB8fl8fHR8nPz5fh4WHJzs6WlZUVOTo6kry8vOT/tK69vV1qamo+jfyn7/dD+zffJmPBTExMyP39/evACuLtCbO9vS37+/vJ/+u/K6inpyfRv1M4IyMjCTgFVFFRIW1tbbK6uio5OTnS3d0tl5eXsrm5KQUFBdLZ2SlTU1Ou9+vt7TUv6zf8QcaC0dNBHylzc3Nyc3OTnCBpMPp5eno6edScn5/L9fV1AuTh4SFZfG5ubvI5DUg/j46OytLSkpyenkplZaXc3t4mf9fa2ioNDQ3JaeR9v98AwPodMhZMelAFo6fBWzC6eIUyNjYmCwsLcnd393qiLC8vS1VVVfJOowj0xEk/svTEUlDPz89J+/Lycunr63uXqef9rMv6DfXhwOi7xuLiopSUlEhdXZ3s7OwkAFpaWqS6ujo5efQx8/YRlT5hdCH6Uqt/o1d/f7+UlZV9CuZf7/cbEFi+QzgwJycnoqfIx0vfW/SxoyeKAtETSU8mPYH0V9Tg4GDyiJqcnExOHr0UWEdHx6dg/uV+lkX9ltqMBzM7OytXV1evjyQ9TdIvw4rkz58/CQA9LfQdZ2ZmJnk3qa2tlYuLiwRNc3OzNDY2ytramhweHkppaWlSo70+/oLyvN9vQWD5HhkPRk8IfV/5+Cvp7TuOgtFHkL60Kq75+fl37yk9PT0JHsWlNfpCrHC2trZeX5D115NeXvdTzJl4ZTyY/xK6nhx6guilp8l3Xz99v++c538J5jsDjd4bMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd7uL9AOPbX2neNIAAAAAElFTkSuQmCC" />
+            
+<img data-src="holder.js/140x140" class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAFjklEQVR4Xu3Xx0skfRDG8TJnFEXEg4oJvIgZxYT/ujmsIgZEwXgUdRRzdqmGEfUg1rulOPV++za7ZfXUUx9+3ZOVSqVehIsEvphAFmC+mBRlSQKAAYIpAcCY4qIYMBgwJQAYU1wUAwYDpgQAY4qLYsBgwJQAYExxUQwYDJgSAIwpLooBgwFTAoAxxUUxYDBgSgAwprgoBgwGTAkAxhQXxYDBgCkBwJjiohgwGDAlABhTXBQDBgOmBABjiotiwGDAlABgTHFRDBgMmBIAjCkuigGDAVMCgDHFRTFgMGBKADCmuCgGDAZMCQDGFBfFgMGAKQHAmOKiGDAYMCUAGFNcFAMGA6YEAGOKi2LAYMCUAGBMcVEMGAyYEgCMKS6KAYMBUwKAMcVFMWAwYEoAMKa4KAYMBkwJAMYUF8WAwYApAcCY4qIYMBgwJQAYU1wUAwYDpgQAY4qLYsBgwJQAYExxUQwYDJgSAIwpLooBgwFTAoAxxUUxYDBgSgAwprgoBgwGTAlkPJi9vT05ODiQgYEBKSwsfDd8KpWSjY0NKS4ulq6uLsnKypKXlxdZX1+X4+Pj5HNTU5PU19d/ObSfvt+Xv9gPFWYsmLOzM1EQu7u7SVRDQ0NSVFT0GpvCGB8fl8fHR8nPz5fh4WHJzs6WlZUVOTo6kry8vOT/tK69vV1qamo+jfyn7/dD+zffJmPBTExMyP39/evACuLtCbO9vS37+/vJ/+u/K6inpyfRv1M4IyMjCTgFVFFRIW1tbbK6uio5OTnS3d0tl5eXsrm5KQUFBdLZ2SlTU1Ou9+vt7TUv6zf8QcaC0dNBHylzc3Nyc3OTnCBpMPp5eno6edScn5/L9fV1AuTh4SFZfG5ubvI5DUg/j46OytLSkpyenkplZaXc3t4mf9fa2ioNDQ3JaeR9v98AwPodMhZMelAFo6fBWzC6eIUyNjYmCwsLcnd393qiLC8vS1VVVfJOowj0xEk/svTEUlDPz89J+/Lycunr63uXqef9rMv6DfXhwOi7xuLiopSUlEhdXZ3s7OwkAFpaWqS6ujo5efQx8/YRlT5hdCH6Uqt/o1d/f7+UlZV9CuZf7/cbEFi+QzgwJycnoqfIx0vfW/SxoyeKAtETSU8mPYH0V9Tg4GDyiJqcnExOHr0UWEdHx6dg/uV+lkX9ltqMBzM7OytXV1evjyQ9TdIvw4rkz58/CQA9LfQdZ2ZmJnk3qa2tlYuLiwRNc3OzNDY2ytramhweHkppaWlSo70+/oLyvN9vQWD5HhkPRk8IfV/5+Cvp7TuOgtFHkL60Kq75+fl37yk9PT0JHsWlNfpCrHC2trZeX5D115NeXvdTzJl4ZTyY/xK6nhx6guilp8l3Xz99v++c538J5jsDjd4bMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd7uL9AOPbX2neNIAAAAAElFTkSuQmCC" />
+            
+<img data-src="holder.js/140x140" class="img-polaroid" alt="140x140" style="width: 140px; height: 140px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAFjklEQVR4Xu3Xx0skfRDG8TJnFEXEg4oJvIgZxYT/ujmsIgZEwXgUdRRzdqmGEfUg1rulOPV++za7ZfXUUx9+3ZOVSqVehIsEvphAFmC+mBRlSQKAAYIpAcCY4qIYMBgwJQAYU1wUAwYDpgQAY4qLYsBgwJQAYExxUQwYDJgSAIwpLooBgwFTAoAxxUUxYDBgSgAwprgoBgwGTAkAxhQXxYDBgCkBwJjiohgwGDAlABhTXBQDBgOmBABjiotiwGDAlABgTHFRDBgMmBIAjCkuigGDAVMCgDHFRTFgMGBKADCmuCgGDAZMCQDGFBfFgMGAKQHAmOKiGDAYMCUAGFNcFAMGA6YEAGOKi2LAYMCUAGBMcVEMGAyYEgCMKS6KAYMBUwKAMcVFMWAwYEoAMKa4KAYMBkwJAMYUF8WAwYApAcCY4qIYMBgwJQAYU1wUAwYDpgQAY4qLYsBgwJQAYExxUQwYDJgSAIwpLooBgwFTAoAxxUUxYDBgSgAwprgoBgwGTAlkPJi9vT05ODiQgYEBKSwsfDd8KpWSjY0NKS4ulq6uLsnKypKXlxdZX1+X4+Pj5HNTU5PU19d/ObSfvt+Xv9gPFWYsmLOzM1EQu7u7SVRDQ0NSVFT0GpvCGB8fl8fHR8nPz5fh4WHJzs6WlZUVOTo6kry8vOT/tK69vV1qamo+jfyn7/dD+zffJmPBTExMyP39/evACuLtCbO9vS37+/vJ/+u/K6inpyfRv1M4IyMjCTgFVFFRIW1tbbK6uio5OTnS3d0tl5eXsrm5KQUFBdLZ2SlTU1Ou9+vt7TUv6zf8QcaC0dNBHylzc3Nyc3OTnCBpMPp5eno6edScn5/L9fV1AuTh4SFZfG5ubvI5DUg/j46OytLSkpyenkplZaXc3t4mf9fa2ioNDQ3JaeR9v98AwPodMhZMelAFo6fBWzC6eIUyNjYmCwsLcnd393qiLC8vS1VVVfJOowj0xEk/svTEUlDPz89J+/Lycunr63uXqef9rMv6DfXhwOi7xuLiopSUlEhdXZ3s7OwkAFpaWqS6ujo5efQx8/YRlT5hdCH6Uqt/o1d/f7+UlZV9CuZf7/cbEFi+QzgwJycnoqfIx0vfW/SxoyeKAtETSU8mPYH0V9Tg4GDyiJqcnExOHr0UWEdHx6dg/uV+lkX9ltqMBzM7OytXV1evjyQ9TdIvw4rkz58/CQA9LfQdZ2ZmJnk3qa2tlYuLiwRNc3OzNDY2ytramhweHkppaWlSo70+/oLyvN9vQWD5HhkPRk8IfV/5+Cvp7TuOgtFHkL60Kq75+fl37yk9PT0JHsWlNfpCrHC2trZeX5D115NeXvdTzJl4ZTyY/xK6nhx6guilp8l3Xz99v++c538J5jsDjd4bMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd4OMNE37DwfYJwDjd7uL9AOPbX2neNIAAAAAElFTkSuQmCC" />
+          </div>
+<div class="bs-docs-example">
+            <div class="well" style="padding: 8px 0; margin-bottom: 0;">
+              <ul class="nav nav-list">
+                <li class="active"><a href="#"><span class="icon-home icon-white"></span> Home</a></li>
+                <li><a href="#"><span class="icon-book"></span> Library</a></li>
+                <li><a href="#"><span class="icon-pencil"></span> Applications</a></li>
+                <li><a href="#"><em></em> Misc</a></li>
+              
+</ul>
+            </div>
+          </div>]]>
+			</field>							
+		</fields>
+		
+		<view file="/views/homepage.tpl" />
+	</homepage>
+	
+	<blueprints>
+		
+		<!-- basic page blueprint -->
+		<blueprint system="basic-page" deactivated="" />
+		
+		<!-- blog blueprint -->
+		<blueprint system="blog" deactivated="" />
+		
+		<!-- basic blog blueprint -->
+		<blueprint system="blog-basic" deactivated="" />
+	</blueprints>
+	
+	<!-- clippings -->	
+	<clippings>
+		<clipping name="site_name" name_friendly="Site Name" required="0" datatype="text" sort="1" locked="1">
+			<![CDATA[Zesty Bootstrapped]]>
+		</clipping>
+		<clipping name="logo" name_friendly="Site Logo" required="0" datatype="images" sort="2" locked="1" />
+		<clipping name="footer_text" name_friendly="Footer Text" required="0" datatype="text" sort="3" locked="0">
+			<![CDATA[Footer text can be updated in Content Clippings]]>
+		</clipping>
+		<clipping name="google_publisher_id" name_friendly="Google Publisher ID" required="0" datatype="text" sort="4" locked="0" />
+	</clippings>
+
+
+	<!-- head files -->	
+	<head>
+		<item nodeName="html" isLocked="1" active="1" value="html5" />
+		<item type="meta" nodeName="meta" isLocked="0" active="1" sort="1">
+			<http-equiv>Content-Type</http-equiv>
+			<content>text/html;charset=utf-8</content>
+		</item>
+		<item type="meta" nodeName="meta" isLocked="0" active="1" sort="1">
+			<name>viewport</name>
+			<content>width=device-width, initial-scale=1.0</content>
+		</item>
+		
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="2" 	file_name="bootstrap-reset" 				less_file="/resources/less/bootstrap-reset.less" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="3" 	file_name="bootstrap-mixins" 				less_file="/resources/less/bootstrap-mixins.less" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="4" 	file_name="bootstrap-variables" 			less_file="/resources/less/bootstrap-variables.less" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="5" 	file_name="bootstrap" 						less_file="/resources/less/bootstrap.less" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="6" 	file_name="bootstrap-customize"				less_file="/resources/less/bootstrap-customize.less" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="7" 	file_name="bootstrap-responsive-util"		less_file="/resources/less/bootstrap-responsive-util.less" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="8" 	file_name="bootstrap-responsive-1200"		less_file="/resources/less/bootstrap-responsive-1200.less" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="9" 	file_name="bootstrap-responsive-768-979"	less_file="/resources/less/bootstrap-responsive-768-979.less" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="10" file_name="bootstrap-responsive-767"		less_file="/resources/less/bootstrap-responsive-767.less" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="11" file_name="bootstrap-responsive-nav"		less_file="/resources/less/bootstrap-responsive-nav.less" />
+
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="12" file_name="ie7.css" ie="ie7" file="/resources/css/ie7.css" />
+		<item type="text/css" nodeName="link" isLocked="0" active="1" sort="13" file_name="ie8.css" ie="ie8" file="/resources/css/ie8.css" />
+		
+		<item type="text/javascript" nodeName="script" isLocked="0" active="1" sort="14" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"  />
+		<item type="text/javascript" nodeName="script" isLocked="0" active="1" sort="15" file_name="bootstrap.js" file="/resources/js/bootstrap.js" />
+		<item type="text/javascript" nodeName="script" isLocked="0" active="1" sort="16" file_name="main.js" file="/resources/js/main.js" />
+	</head>
+
+	<variables>
+		<variable reference_name="sans-font" name="Sans Serif Font Family" datatype="font_picker" value="'Helvetica Neue', Helvetica, Arial, sans-serif" description="The sans serif font family" edit_in_content="1" locked="1" />
+		<variable reference_name="serif-font" name="Serif Font Family" datatype="font_picker" value="Georgia, 'Times New Roman', Times, serif" description="The serif font family" edit_in_content="1" locked="1" />
+		<variable reference_name="mono-font" name="Mono Font Family" datatype="font_picker" value="Monaco, Menlo, Consolas, 'Courier New', monospace" description="The monospace font family" edit_in_content="1" locked="1" />
+		<variable reference_name="header-font" name="Header Tag Font Family" datatype="font_picker" value="'Helvetica Neue', Helvetica, Arial, sans-serif" description="The header tag font family" edit_in_content="1" locked="1" />
+		
+		<!-- nav colors -->
+		<variable reference_name="background-primary-color" name="Background Primary Color" datatype="color" value="#FFFFFF" edit_in_content="1" locked="1" />
+		<variable reference_name="background-secondary-color" name="Background Secondary Color" datatype="color" value="#CCCCCC" edit_in_content="1" locked="1" />
+		<variable reference_name="sidebar-background" name="Sidebar Color" datatype="color" value="#EEEEEE" edit_in_content="1" locked="1" />
+		
+		<variable reference_name="nav-background-color" name="Navigation Background Color" datatype="color" value="#111111" edit_in_content="1" locked="1" />
+		<variable reference_name="nav-background-highlight" name="Navigation Background Highlight" datatype="color" value="#222222" edit_in_content="1" locked="1" />
+		<variable reference_name="nav-border-color" name="Navigation Border Color" datatype="color" value="#252525" edit_in_content="1" locked="1" />
+		
+		<!-- grays -->
+		<variable reference_name="black" name="Black" datatype="color" value="#000000" edit_in_content="1" locked="1" />
+		<variable reference_name="gray-darker" name="Gray Darker" datatype="color" value="#222222" edit_in_content="1" locked="1" />
+		<variable reference_name="gray-dark" name="Gray Dark" datatype="color" value="#333333" edit_in_content="1" locked="1" />
+		<variable reference_name="gray" name="Gray" datatype="color" value="#555555" edit_in_content="1" locked="1" />
+		<variable reference_name="gray-light" name="Gray Light" datatype="color" value="#999999" edit_in_content="1" locked="1" />
+		<variable reference_name="gray-lighter" name="Gray Lighter" datatype="color" value="#eeeeee" edit_in_content="1" locked="1" />
+		<variable reference_name="white" name="White" datatype="color" value="#ffffff" edit_in_content="1" locked="1" />
+		
+		<!-- accent colors -->
+		<variable reference_name="blue" name="Blue" datatype="color" value="#049cdb" edit_in_content="1" locked="1" />
+		<variable reference_name="blue-dark" name="Blue Dark" datatype="color" value="#0064cd" edit_in_content="1" locked="1" />
+		<variable reference_name="green" name="Green" datatype="color" value="#46a546" edit_in_content="1" locked="1" />
+		<variable reference_name="red" name="Red" datatype="color" value="#9d261d" edit_in_content="1" locked="1" />
+		<variable reference_name="yellow" name="Yellow" datatype="color" value="#ffc40d" edit_in_content="1" locked="1" />
+		<variable reference_name="orange" name="Orange" datatype="color" value="#f89406" edit_in_content="1" locked="1" />
+		<variable reference_name="pink" name="Pink" datatype="color" value="#c3325f" edit_in_content="1" locked="1" />
+		<variable reference_name="purple" name="Purple" datatype="color" value="#7a43b6" edit_in_content="1" locked="1" />
+		
+		<variable reference_name="link-color" name="Link Color" datatype="color" value="#0088cc" edit_in_content="1" locked="1" />
+		<variable reference_name="well-background" name="Well Background Color" datatype="color" value="#f5f5f5" edit_in_content="1" locked="1" />
+		
+	</variables>
+
+
+	<settings>
+		<setting category="general" name="robots_on" label="Search Engine Crawlable?" type="checkbox"  options="0,1"><![CDATA[1]]></setting>
+		<setting category="developer" name="parsley_debugger" label="Use Parsley Debugger" type="checkbox" options="1,2"><![CDATA[1]]></setting>
+		<setting category="general" name="use_z_grid" label="Include Zesty Grid CSS for responsive layout?" type="checkbox" options="0,1"><![CDATA[1]]></setting>
+	</settings>
+
+
+
+</template>
+

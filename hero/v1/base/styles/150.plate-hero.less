@@ -1,0 +1,285 @@
+body {
+	background-color: @body-bg-color;
+	.zestyBackground(@body-bg-image);
+}
+
+
+.structure,.recipe-wrap {
+	max-width: @container-max-width;
+	margin: 0px auto;
+	clear:both;
+	padding: (@default-spacing/2) 0px;
+	position: relative;
+}
+
+.z-container {
+	background: none;
+}
+
+.padding {
+	padding: @default-spacing;
+}
+
+.heading {
+	
+	&.texture {
+		height: 160px;
+		.box-shadow(0px 0px 10px);
+		background-size: cover;
+	}
+}
+
+/* header  */
+.header-container {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	z-index: 10;
+	
+	.header {
+		background-color: fade(@nav-bg-color, @nav-opacity);
+	}
+}
+
+.header {
+	
+	.navigation {
+		margin-top: 30px;	
+	}
+	
+	min-height: 60px;
+	margin-bottom: (@default-spacing/2);
+	.border-bottom-radius(@default-border-radius);
+	
+	a.logo {
+		margin-top: (@default-spacing);
+		float: left;
+		width: 60%;
+
+		&:hover {
+			img {
+				.opacity(90);
+			}
+		}
+	}
+}
+
+.unslider-banner {
+	ol, ul, dl, li {
+		margin: 0px;
+	}
+}
+.title-container{
+	background-color: #10343A;
+	padding: 35px;
+	text-align: center;
+	/*border-top: 5px solid lighten(@accent-color, 5%);
+	border-bottom: 5px solid lighten(@accent-color, 5%);*/
+	h1{
+		color: @h4-font-color;
+		text-shadow:0px -1px 0px black;
+		font-weight: normal;
+	}
+	a{
+		font-size: @h2-font-size;
+		text-shadow: 0px 1px 0px black;
+	}
+	
+}
+.squares-container {
+	background-color: @accent-color;
+	padding: 25px;
+	
+	.square {
+		color: @content-bg-color;
+		cursor: pointer;
+		border-bottom: 5px solid #10343A;
+		.opacity(80);
+		.transition(all @nav-transition-speed @nav-transition-type);
+		&:hover {
+			.opacity(100);	
+			border-bottom: 5px solid lighten(@link-hover-color, 5%);
+		}
+		
+		h4 {
+			color: @h4-font-color;
+			font-weight: normal;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			text-align: center;
+			.border-bottom-right-radius(@default-border-radius);
+			padding: @default-spacing / 2;
+			box-sizing: border-box;
+			.text-overflow();
+		}
+		img {
+			width: 100%;
+		}
+		p {
+			display: none;
+		}
+		a {
+			display: none;
+		}
+	}
+}
+
+
+/* content  */
+
+.content{
+	min-height:(@default-spacing*20);
+}
+
+.content-container{
+	margin: 40px 130px 40px 130px;
+	min-height: 300px;
+	border-top: 1px solid #ddd;
+	
+	h1{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+		text-shadow: 0px -1px 0px black;
+	}
+	h2{
+		text-shadow: 0px -1px 0px black;
+	}
+	h3{
+		font-family: @nav-font;
+		font-weight: 100;
+		margin-bottom: 30px;
+	}
+}
+
+
+.name-headline{
+	padding: 15px;
+	background-color: fade(@nav-bg-color, @nav-opacity);
+	h1{
+		color: white;
+		text-shadow:0px -1px 0px black;
+	}
+}
+.contact{
+	padding: 30px;
+
+}
+
+
+
+/* footer  */
+.footer-container {
+	background-color: @accent-color;
+}
+
+.footer{ 
+	padding: 20px;
+	background-color: @accent-color;
+	margin-left: 130px;
+	margin-right: 130px;
+	text-align: center;
+	
+	h3{
+		padding:10px;
+		text-shadow:0px -1px 0px black;
+	}
+	.find-us{
+		
+	}
+	.social-links{
+		float: right;
+	}
+	.footer-logo{
+		width: 30%;
+	}
+	
+	.fl {
+		float: left;
+		width: 30%;
+		padding: 0px 0px (@default-spacing/2) 2%;
+	}
+	
+	h3 {
+		color: @nav-font-color;
+	}
+	
+	p {
+		color: darken(@nav-font-color, 8%);
+	}
+	
+	ul#nav {
+			
+		background-color: @nav-bg-color;
+			
+				li {
+				margin-bottom: (@default-spacing/2);
+				list-style: none;
+				
+				a {
+					text-decoration: none;
+					color: darken(@nav-font-color, 8%);
+					
+					&.at {
+						font-weight: bold;
+					}
+				}
+			}
+		&:hover {
+			color: #8db51f;
+		}
+			ul {
+				display: none;
+		}
+	}
+}
+
+/* navigation  */
+#toggle-nav {
+	display: none;
+}
+
+.navigation {
+	
+	ul#nav { 
+		background: none;
+		
+		li { 
+			display: inline-table; 
+			list-style:none;  
+			margin:0px; 
+			padding:0px; 
+			line-height:0px;
+			float:left; // for ie
+			outline:0;
+			
+		}
+	}
+}
+.bottom{
+	padding: 10px;
+	background-color: #000000;
+	
+	.footer-text{
+		margin-top:15px;
+	}
+}
+
+
+
+/* footer copyright */
+.copyright{ 
+	clear: both; 
+	text-align: center; 
+	font-size: 10px; 
+	padding: (@default-spacing*1.5) 0px (@default-spacing/2) 0px; 
+	margin: 0px;
+}
+
+
+// clear
+
+.clear,.floatfix{ clear:both}
+
+.page404 { text-align: center; }

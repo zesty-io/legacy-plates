@@ -1,0 +1,21 @@
+
+// push down for hte fixed navigation, remove if you chose not to fix nav
+body{
+	padding-top: @navbar-height * 1.5;	
+}
+
+// nav hack to put brand in proper spot
+div.collapse.navbar-collapse{
+	clear:none;
+	@media all and(max-width:@screen-md){
+		clear:both;	
+	}
+}
+
+
+.footer {
+    width: 100%;
+	padding: 20px 0px;
+	margin-top: 40px;
+	background-color: @gray-lighter;
+}

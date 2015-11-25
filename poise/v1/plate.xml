@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+		<googlefont family="Roboto Condensed"/>
+		<googlefont family="Pathway Gothic One"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name" required="1"><![CDATA[Poise]]></text>
+		<images name="logo" name_friendly="Site Logo" limit="1"><![CDATA[https://19d06dec3ad4f00d039e-11aff75c6410c232a4b6fccb550a0d19.ssl.cf2.rackcdn.com/or-poise-logo-1.png]]></images>
+		<text name="copyright" name_friendly="Footer Text"><![CDATA[Footer text can be updated in Content Clippings]]></text>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"></text>
+		<images name="texture_background" name_friendly="Texture Background" limit="1"><![CDATA[https://19d06dec3ad4f00d039e-11aff75c6410c232a4b6fccb550a0d19.ssl.cf2.rackcdn.com/or-grey-flowers.jpg]]></images>
+	</clippings>
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="opening_text" name_friendly="Opening Text" required="1"/>
+			</fields>
+			<items>
+				<item link_title="Homepage" path_part="zesty_home">
+					<opening_text><![CDATA[People come to Poise Yoga for physical and emotional nourishment.  The physical benefits come from the yoga itself.]]></opening_text>
+				</item>
+			</items>
+		</templateset>
+		
+		<templateset name="instructor_training" name_friendly="Instructor Training" view="instructor-training">
+			<fields>
+				<text name="title_of_page" name_friendly="Title of Page"/>
+				<images name="main_image" name_friendly="Main Image" limit="1" />
+				<wysiwyg_basic name="page_conent" name_friendly="Page Conent"/>
+				<wysiwyg_basic name="description" name_friendly="Description"/>
+			</fields>
+			<items>
+				<item link_title="Instructor Training" path_part="instructor-training">
+					<title_of_page><![CDATA[Poise Yoga Instructor Training]]></title_of_page>
+					<main_image><![CDATA[https://19d06dec3ad4f00d039e-11aff75c6410c232a4b6fccb550a0d19.ssl.cf2.rackcdn.com/or-instructor-image.jpg]]></main_image>
+					<page_conent><![CDATA[<p>week-long intensive yoga teacher training</p>
+<p><br />Our Intensive Yoga Teacher Training programs are a less expensive alternative to fit into your schedule and your pocketbook.</p>
+<p>Our intensive yoga instruction programs are not 200-hour courses, but we will use a very similar curriculum.</p>
+<p>Expect the same high caliber instruction and content as a 200-hour yoga teacher training course delivered in a shorter period.</p>]]></page_conent>
+					<description><![CDATA[<h2>Fancy Instructor $45</h2>
+<p>Work with this fancy dancy instructor for 1 hour she will rock your yoga pants off</p>]]></description>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>

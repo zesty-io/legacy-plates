@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<plate>
+	<store version="1" />
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"/>
+		<googlefont family="Open Sans"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name">Kada Imports</text>
+		<images name="logo" name_friendly="Site Logo">7</images>
+		<text name="footer_text" name_friendly="Footer Text">Copyright 2013. All Rights Reserved. Kada Imports, LLC.</text>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"></text>
+		<text name="top_link_1_url" name_friendly="Site Link 1 Url">#</text>
+		<text name="top_link_1_text" name_friendly="Site Link 1 Text">About</text>
+		<text name="top_link_2_url" name_friendly="Site Link 2 Url">#</text>
+		<text name="top_link_2_text" name_friendly="Site Link 2 Text">Contact</text>
+		<images name="header_texture_image" name_friendly="Header Texture Image">10</images>
+		<text name="footer_about_title" name_friendly="Footer About Title">About Kada Imports</text>
+		<textarea name="footer_about_text" name_friendly="Footer About Text">In the Himalayas the concepts of Karma </textarea>
+		<text name="footer_form_title" name_friendly="Footer Form Title">Join the Kada Mailing List</text>
+		<text name="footer_form_label" name_friendly="Footer Form Label">Enter your email address for product update and specials</text>
+	</clippings>
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="title" name_friendly="Lead in Title" required="1"/>
+				<wysiwyg_advanced name="content" name_friendly="Intro Text"/>
+				<images name="image" name_friendly="Main Image"/>
+			</fields>
+			<items>
+				<item link_title="Home" path_part="zesty_home">
+					<title></title>
+					<content></content>
+					<image></image>
+				</item>
+			</items>
+		</templateset>
+		<dataset name="slider" name_friendly="Homepage Slider">
+			<fields>
+				<internal_link name="hotlink" name_friendly="hotlink"/>
+				<images name="image" name_friendly="Slide Image" required="1"/>
+				<text name="title" name_friendly="Slide Title"/>
+				<textarea name="description" name_friendly="Description"/>
+				<sort name="sort" name_friendly="Sort Order" required="1"/>
+			</fields>
+			<items>
+				<item link_title="Default Link Title" path_part="">
+					<hotlink>501</hotlink>
+					<image><![CDATA[https://49b81094c0b2772705c5-a33dd5bbcac92e01ca74cc1068acb156.ssl.cf2.rackcdn.com/sz-990x350-img_3066.JPG]]></image>
+					<title></title>
+					<description></description>
+					<sort>0</sort>
+				</item>	
+			</items>
+		</dataset>
+		<dataset name="squares" name_friendly="Homepage Squares">
+			<fields>
+				<text name="font_awesome_icon" name_friendly="Font-awesome Icon "/>
+				<text name="title" name_friendly="Title" required="1"/>
+				<textarea name="description" name_friendly="Description"/>
+				<images name="image" name_friendly="Image"/>
+				<text name="action_title" name_friendly="Action Title"/>
+				<text name="url" name_friendly="Link"/>
+				<sort name="sort" name_friendly="Sort Order"/>
+			</fields>
+			<items>
+				<item link_title="Default Link Title" path_part="">
+					<font_awesome_icon></font_awesome_icon>
+					<title></title>
+					<description></description>
+					<image></image>
+					<action_title></action_title>
+					<url></url>
+					<sort>0</sort>
+				</item>	
+				<item link_title="Default Link Title" path_part="">
+					<font_awesome_icon></font_awesome_icon>
+					<title></title>
+					<description></description>
+					<image></image>
+					<action_title></action_title>
+					<url></url>
+					<sort>0</sort>
+				</item>
+				<item link_title="Default Link Title" path_part="">
+					<font_awesome_icon></font_awesome_icon>
+					<title></title>
+					<description></description>
+					<image></image>
+					<action_title></action_title>
+					<url></url>
+					<sort>0</sort>
+				</item>
+			</items>
+		</dataset>
+		<templateset name="product_main_page" name_friendly="Product Main Page" view="product-main-page">
+			<fields>
+				<text name="page_name" name_friendly="Page Name"/>
+				<wysiwyg_advanced name="page_content" name_friendly="Page Content"/>
+				<images name="big_image" name_friendly="Big Image"/>
+				<images name="logo" name_friendly="Logo"/>
+			</fields>
+			<items>
+				<item link_title="Products" path_part="products">
+					<page_name></page_name>
+					<page_content></page_content>
+					<big_image></big_image>
+					<logo></logo>
+				</item>
+			</items>
+		</templateset>
+		<pageset name="product" name_friendly="Products" view="products" parent_item="products">
+			<fields>
+				<sort name="sort_order" name_friendly="Sort Order"/>
+			</fields>
+			<items>
+				<item link_title="Tea Product One" path_part="tea-product-one" parent="products">
+					<sort_order>0</sort_order>
+				</item>
+				<item link_title="Tea Product Two" path_part="tea-product-two" parent="products">
+					<sort_order>0</sort_order>
+				</item>
+			</items>
+		</pageset>
+
+		<dataset name="product_squares" name_friendly="Product Squares">
+			<fields>
+				<text name="title" name_friendly="Title"/>
+				<images name="image" name_friendly="image"/>
+				<internal_link name="hotlink" name_friendly="Hotlink"/>
+				<sort name="sort_order" name_friendly="Sort Order"/>
+			</fields>
+			<items>
+				<item link_title="Teas" path_part="">
+					<title>Is The Guiana</title>
+					<image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Thai_peppers.jpg/1024px-Thai_peppers.jpg</image>
+					<hotlink>501</hotlink>
+					<sort_order>0</sort_order>
+				</item>
+				<item link_title="Shawls" path_part="">
+					<title>Capsicum It Of</title>
+					<image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Thai_peppers.jpg/1024px-Thai_peppers.jpg</image>
+					<hotlink>501</hotlink>
+					<sort_order>0</sort_order>
+				</item>
+				<item link_title="Leaf Plates" path_part="">
+					<title>Chili Or Flavour</title>
+					<image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Thai_peppers.jpg/1024px-Thai_peppers.jpg</image>
+					<hotlink>501</hotlink>
+					<sort_order>0</sort_order>
+				</item>
+			</items>
+		</dataset>
+	</ingredients>
+</plate>

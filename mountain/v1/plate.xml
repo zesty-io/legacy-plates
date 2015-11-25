@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+		<googlefont family="Playfair Display"/>
+		<googlefont family="Lato"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name" required="1"><![CDATA[Zesty Mountain Plate]]></text>
+		<images name="logo" name_friendly="Site Logo" limit="1"><![CDATA[https://e9dc2961c503596c2965-6120aced0fef31f8b6c8cd1145b567d3.ssl.cf2.rackcdn.com/or-mountain-logo1.png]]></images>
+		<text name="footer_text" name_friendly="Footer Text"><![CDATA[&#xA9;2013 Zesty Mountain Plate. Zesty Content Management System.]]></text>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"></text>
+		<images name="nav_image" name_friendly="Nav Image"><![CDATA[https://e9dc2961c503596c2965-6120aced0fef31f8b6c8cd1145b567d3.ssl.cf2.rackcdn.com/or-nav-image.jpg]]></images>
+		<images name="triangle" name_friendly="Triangle"><![CDATA[https://e9dc2961c503596c2965-6120aced0fef31f8b6c8cd1145b567d3.ssl.cf2.rackcdn.com/or-triangle.png]]></images>
+		<text name="address" name_friendly="Address"><![CDATA[1045 6th Avenue Zesty HQ, CA 92101]]></text>
+		<images name="logo_icon" name_friendly="logo icon"><![CDATA[https://e9dc2961c503596c2965-6120aced0fef31f8b6c8cd1145b567d3.ssl.cf2.rackcdn.com/or-small_mountains.png]]></images>
+		<text name="email" name_friendly="email"><![CDATA[info@gozesty.com]]></text>
+		<text name="phone_number" name_friendly="phone number"><![CDATA[888.888.8888]]></text>
+	</clippings>
+	<ingredients>
+		<templateset name="home" name_friendly="Home" view="homepage">
+			<fields>
+				<text name="lead_in_title" name_friendly="Lead in title"/>
+				<images name="hero_image" name_friendly="Hero Image"/>
+				<wysiwyg_advanced name="content" name_friendly="Intro Text"/>
+			</fields>
+			
+			<items>
+				<item link_title="Home" path_part="zesty_home">
+					<lead_in_title><![CDATA[Welcome to Mountain / <em>We specialize in awesome!</em>]]></lead_in_title>
+					<hero_image><![CDATA[https://e9dc2961c503596c2965-6120aced0fef31f8b6c8cd1145b567d3.ssl.cf2.rackcdn.com/sz-1274x-hero-image2.png]]></hero_image>
+					<content><![CDATA[<p><em>Mountain is a simple and eye-catching Zesty plate where your personal or professional content can come to life on the web. It's starting recipes can work for a variety of businesses or personal use like: photographers, merchandise, and artists' portfolios. Now, let&rsquo;s explore.</em></p>]]></content>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>

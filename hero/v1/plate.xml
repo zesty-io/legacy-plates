@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+		<googlefont family="ABeeZee"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name"><![CDATA[Hero]]></text>
+		<images name="logo" name_friendly="Site Logo" limit="1">
+			<![CDATA[https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-hero-logo.png]]>
+		</images>
+		<text name="footer_text" name_friendly="Footer Text">
+			<![CDATA[Footer text can be updated in Content Clippings]]>
+		</text>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"><![CDATA[]]></text>
+		<text name="top_link_1_url" name_friendly="Top Link 1 URL"><![CDATA[#]]></text>
+		<text name="top_link_1_text" name_friendly="Top Link 1 Text"><![CDATA[About]]></text>
+		<text name="top_link_2_url" name_friendly="Top Link 2 URL"><![CDATA[#]]></text>
+		<text name="top_link_2_text" name_friendly="Top Link 2 Text"><![CDATA[Contact]]></text>
+		<text name="footer_about_title" name_friendly="Footer About Title"><![CDATA[About a Hero]]></text>
+		<textarea name="footer_about_text" name_friendly="Footer About Text"><![CDATA[A hero is a person who is admired for courage or noble qualities.]]></textarea>
+		<text name="footer_form_title" name_friendly="Footer Form Title"><![CDATA[Contact a Hero]]></text>
+		<text name="footer_form_label" name_friendly="Footer Form Label"><![CDATA[Please provide your email address...]]></text>
+		<images name="header_texture_image" name_friendly="Header Texture Image" limit="1">
+			<![CDATA[https://b64d8ceea21aaf2a6e01-2dc0b1b1038915cc64f54354367e7400.ssl.cf2.rackcdn.com/sz-1600x400-ski.jpg]]>
+		</images>
+	</clippings>
+	
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="title" name_friendly="Lead in Title" required="1"/>
+				<text name="content_title" name_friendly="Content Title" required="1"/>				
+				<wysiwyg_advanced name="lead_in_tag" name_friendly="Lead in Tagline"/>
+				<wysiwyg_advanced name="content" name_friendly="Intro Text"/>
+				<textarea name="lead_in_text" name_friendly="Lead in Text" required="1"/>				
+				<images name="image" name_friendly="Main Image" limit="1"/>
+				<wysiwyg_advanced name="intro_text_one" name_friendly="Intro Text 1"/>
+				<wysiwyg_advanced name="intro_text_two" name_friendly="Intro Text 2"/>
+				<wysiwyg_advanced name="intro_text_three" name_friendly="Intro Text 3"/>
+			</fields>
+			
+			<items>
+				<item link_title="Homepage" path_part="zesty_home">
+					<title><![CDATA[Welcome to HERO Extreme Sports]]></title>
+					<content_title><![CDATA[Are you an extreme sports lover? You've come to the right place! ]]></content_title>
+					<lead_in_tag><![CDATA[<p><a href="http://zesty.3edc18eaaa22d2083df55415bd2de463.sites.gozesty.com/ajax/live_preview.ajax.php?t=undefined#/">Find an extreme sport and book your first Hero experience today!&nbsp;</a></p>]]></lead_in_tag>
+					<content><![CDATA[<p>There can be a lot of content you could potentially put on your homepage, but you must start simple.</p>
+	<h2>What Does Your Company Do?</h2><p>A user should be able to figure this one out in under three seconds. If they can&rsquo;t you aren&rsquo;t doing it right. If you sell a specific product it needs to be right there on the homepage.</p>
+	<h2>How Do You Do It</h2><p>You&rsquo;re either cheap, or fast, or high quality, or green, or something else, but you need to let customers know. Say what you do (question one) and then how you do it. People don&rsquo;t have the time online for a sales pitch so just put it out there as simply and succinctly as possible.</p>
+	<h2>How Are You Different?</h2><p> Why would a visitor chose you over the competition?</p>]]></content>
+					<lead_in_text><![CDATA[If you're ever in the area, come check us out. We have the largest Extreme Sports activity selection in the United States. Our stores have the largest selection of Skateboards, Snowboards and more for your extreme sport adventures!]]></lead_in_text>
+					<intro_text_one><![CDATA[	<h2>Always wanted to try Cliff Jumping?</h2>
+<p>Come experience it with us! You&rsquo;ve seen it in movies, you probably dream about it &ndash; so why not experience it? The thought of cliff jumping probably sounds like something that you could never do, but for others it is highly appealing.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></intro_text_one>
+					<intro_text_two><![CDATA[<h2>Sky Diving is a Must!</h2>
+<p>Skydiving is a singular experience for nearly anyone. San Diego sky diving centers utilize aircraft and facilities are designed to handle groups of any size - whether you are an individual or in a group of a hundred, we will make sure that your sky dive experience is as memorable as possible.</p>]]></intro_text_two>
+					<intro_text_three><![CDATA[<h2>Extreme Bouldering you say?</h2>
+<p>Bouldering is a form of rock climbing that is performed without the use of ropes or harnesses. While it can be done without any equipment whatsoever, most climbers use climbing shoes to help secure footholds, chalk to keep their hands dry, and bouldering mats to prevent injuries from falls.</p>]]></intro_text_three>										
+					<image><![CDATA[https://b64d8ceea21aaf2a6e01-2dc0b1b1038915cc64f54354367e7400.ssl.cf2.rackcdn.com/or-outdoor-drifting-340-2.jpg]]></image>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>

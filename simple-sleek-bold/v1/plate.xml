@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+		<googlefont family="Varela"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name" required="1"><![CDATA[Zesty Simple Business Plate]]></text>
+		<images name="logo" name_friendly="Site Logo" limit="1"><![CDATA[https://20d517ca209a7bccb489-004943f0e258d746dd2be0d13fab28fe.ssl.cf2.rackcdn.com/sz-x90-or-simple-small-business-plate-logo.png]]></images>
+		<text name="footer_text" name_friendly="Footer Text"><![CDATA[&#xA9;2013 Zesty Simple Business Plate. Zesty Content Management System.]]></text>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"></text>
+	</clippings>
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="title" name_friendly="Lead in Title" required="1"/>
+				<wysiwyg_advanced name="content" name_friendly="Intro Text"/>
+			</fields>
+			<items>
+				<item link_title="Homepage" path_part="zesty_home">'
+					<title><![CDATA[Homepage]]></title>
+					<content><![CDATA[There can be a lot of content you could potentially put on your homepage, but you must start simple.
+
+What Does Your Company Do?
+A user should be able to figure this one out in under three seconds. If they can’t you aren’t doing it right. If you sell a specific product it needs to be right there on the homepage.
+
+How Do You Do It
+You’re either cheap, or fast, or high quality, or green, or something else, but you need to let customers know. Say what you do (question one) and then how you do it. People don’t have the time online for a sales pitch so just put it out there as simply and succinctly as possible.
+
+How Are You Different?
+Why would a visitor chose you over the competition?]]></content>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+		<googlefont family="Carrois Gothic"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name"><![CDATA[Prohibition]]></text>
+		<images name="logo" name_friendly="Site Logo" limit="1"><![CDATA[https://bfc12c95bf592f49e9ca-011475fa8ac7cac22e21f0c5450cfe1f.ssl.cf2.rackcdn.com/sz-140x-prohibition-logo.png]]></images>
+		<text name="copyright" name_friendly="Copyright Text"><![CDATA[&#xA9; 2013 Zesty is a registered trademark of Variable Action.]]></text>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"></text>
+	</clippings>
+	
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="title" name_friendly="Title" required="1"/>
+			</fields>
+			<items>
+				<item link_title="Homepage" path_part="zesty_home">
+					<title><![CDATA[]]></title>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>

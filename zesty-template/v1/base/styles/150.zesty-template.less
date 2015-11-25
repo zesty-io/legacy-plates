@@ -1,0 +1,41 @@
+* {
+	font-family: @font;
+	font-weight: 400;	
+}
+
+h1{
+	padding-top: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h2{
+  color: @zesty-grey;
+  text-align: center;
+  padding: 10px 0px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.recipe-wrap{
+	padding: @default-spacing;	
+}
+
+.side-bar-background{
+	min-height: 400px;	
+	background: @sidebar-bg-color;
+}
+.structure{
+	max-width:@container-max-width;
+	margin: 0px auto;
+	img{
+		max-width: 100%;	
+	}
+	@media all and (max-width: @container-max-width){
+		padding: 0px 20px;
+	}
+}
+
+.z-container{
+	padding: 20px;	
+}

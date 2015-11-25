@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+		<googlefont family="Loved by the King"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name"><![CDATA[Stella Fitzgerald, Inc.]]></text>
+		<images name="logo" name_friendly="Site Logo" limit="1"><![CDATA[https://8ec89f2d666b6da771db-3cadfaa61ee09075e1107ad8ceba340e.ssl.cf2.rackcdn.com/or-stella-logo.png]]></images>
+		<text name="copyright" name_friendly="Copyright Text"><![CDATA[Copyright text]]></text>
+		<text name="about_header" name_friendly="The About Header in the footer"><![CDATA[About]]></text>
+		<textarea name="about_text" name_friendly="The About Text in the footer"><![CDATA[About the company]]></textarea>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"></text>
+		<images name="tape" name_friendly="Tape"><![CDATA[https://8ec89f2d666b6da771db-3cadfaa61ee09075e1107ad8ceba340e.ssl.cf2.rackcdn.com/or-tape.png]]></images>
+	</clippings>
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="title" name_friendly="Title" />
+			</fields>
+			<items>
+				<item link_title="Home" path_part="zesty_home">
+					<title></title>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>

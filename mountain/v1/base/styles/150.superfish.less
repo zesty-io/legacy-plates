@@ -1,0 +1,129 @@
+/*** ESSENTIAL STYLES ***/
+#nav, #nav * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#nav li {
+	position: relative;
+}
+#nav ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+#nav > li {
+	float: left;
+}
+#nav li:hover > ul,
+#nav li.sfHover > ul {
+	display: block;
+}
+
+#nav a {
+	display: block;
+	position: relative;
+}
+#nav ul ul {
+	top: 0;
+	left: 100%;
+}
+
+@nav-bg-top-color: @nav-bg-color;
+@nav-bg-bottom-color: darken(@nav-bg-color,15%);
+@nav-hover-bg-top-color: @nav-hover-bg-color;
+@nav-hover-bg-bottom-color: darken(@nav-hover-bg-color,15%);
+/*** DEMO SKIN ***/
+ul#nav {
+	float: left;
+	#gradient > .vertical( @nav-bg-top-color, @nav-bg-bottom-color);
+	height: @nav-height;
+	line-height: @nav-height;
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+	width: 100%;
+	box-shadow:inset 0px 0px 20px darken(@nav-bg-bottom-color,10%);
+	li {
+		
+		white-space: nowrap; /* no need for Supersubs plugin */
+		*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+		.transition(background @nav-transition-speed @nav-transition-type);
+		display: inline-block;
+		border-right: 1px @nav-bg-bottom-color solid;
+		a {
+			padding: 0px @nav-link-padding-right 0px @nav-link-padding-left;
+			text-decoration: none;
+			display: inline-block;
+			text-shadow: -1px -1px 0px @nav-hover-bg-top-color,1px 1px 0px @nav-hover-bg-bottom-color;
+			font-family: @nav-font;
+			font-size: @nav-font-size;
+			color: @nav-font-color;
+			zoom: 1; /* IE7 */
+			&:hover, &.at{
+				#gradient > .vertical( @nav-hover-bg-bottom-color, @nav-hover-bg-top-color);
+				color: @nav-hover-font-color;
+			}
+		}
+		
+		ul li {
+			background: @nav-bg-bottom-color;
+			display:block;
+			width: @nav-link-padding-right * 8;
+			border-bottom: 1px lighten(@nav-bg-bottom-color,8%) solid;
+			a{
+				width: 100%;
+				padding: (@default-spacing / 2) 0px;
+				text-indent: @nav-link-padding-left;
+				font-size: @nav-font-size * .9;
+				.text-overflow();
+			}
+			ul li {
+				background: lighten(@nav-bg-bottom-color,16%);
+			}
+		}
+		
+		
+	}
+	
+}
+
+
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+	padding-right: 2.5em;
+	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 1em;
+	margin-top: -3px;
+	height: 0;
+	width: 0;
+	/* order of following 3 rules important for fallbacks to work */
+	border: 5px solid transparent;
+	border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-top-color: rgba(255,255,255,.5);
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: white; /* IE8 fallback colour */
+}
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+	margin-top: -5px;
+	margin-right: -3px;
+	border-color: transparent;
+	border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-left-color: rgba(255,255,255,.5);
+}
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+	border-left-color: white;
+}

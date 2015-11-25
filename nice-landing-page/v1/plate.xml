@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<plate>
+	
+	<!-- clippings -->	
+	<clippings>
+		<text name="site_name" name_friendly="Site Name">
+			<![CDATA[Landing Page]]>
+		</text>
+		
+		<images name="logo" name_friendly="Site Logo" limit="1">
+			<![CDATA[https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-nice-landing-page-title.png]]>
+		</images>
+		
+		<text name="phone_number" name_friendly="Phone Number">
+			<![CDATA[1-800-LANDING]]>
+		</text>
+		
+		<text name="contact_label" name_friendly="Contact Form Text">
+			<![CDATA[Join our mailing list!]]>
+		</text>
+	</clippings>
+	
+
+	<!-- head files -->	
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+	</head>
+	
+	<!-- Basic Page Template Set -->
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="sub_heading" name_friendly="Intro Subtitle" required="1" />			
+				<images name="main_image" name_friendly="Main Image" limit="1" />
+				<text name="main_image_alt" name_friendly="Main Image Alt Text" />
+				<wysiwyg_advanced name="content" name_friendly="Content" />
+				<text name="calltoaction" name_friendly="Call to Action Text" />
+				<images name="testimonial_image" name_friendly="Testimonial Image" />
+				<text name="testimonial_image_alt" name_friendly="Testimonial Image Alt Text" />
+				<text name="testimonial_title" name_friendly="Testimonial Title" />
+				<wysiwyg_advanced name="testimonial_content" name_friendly="Testimonial Content" />
+				<images name="information_image" name_friendly="Information Image" />
+				<text name="information_image_alt" name_friendly="Information Image Alt Text" />
+				<text name="information_title" name_friendly="Information Title" />
+				<wysiwyg_advanced name="information_content" name_friendly="Information Content" />
+			</fields>
+			<items>
+				<item link_title="Homepage" path_part="zesty_home">
+					<sub_heading><![CDATA[A SECONDARY HEADLINE]]></sub_heading>
+					<main_image><![CDATA[http://placehold.it/540x380]]></main_image>
+					<main_image_alt><![CDATA[Main Image]]></main_image_alt>
+					<content>
+						<![CDATA[<p>You should aim to showcase your product or service being used in real life. The idea here is to get your customers to empathize and place themselves in a scenario where they are using it. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>]]>
+					</content>
+					<calltoaction><![CDATA[DO IT NOW!]]></calltoaction>
+					<testimonial_image><![CDATA[http://placehold.it/200x280]]></testimonial_image>
+					<testimonial_image_alt><![CDATA[Testimonial]]></testimonial_image_alt>
+					<testimonial_title><![CDATA[A Testimonial!]]></testimonial_title>
+					<testimonial_content>
+						<![CDATA[<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>]]>
+					</testimonial_content>
+					<information_image><![CDATA[http://placehold.it/200x280]]></information_image>
+					<information_image_alt><![CDATA[Information]]></information_image_alt>
+					<information_title><![CDATA[More Information!]]></information_title>
+					<information_content>
+						<![CDATA[<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>]]>
+					</information_content>
+				</item>
+			</items>
+		</templateset>
+		
+		<dataset name="heading" name_friendly="LP Heading Titles">
+			<fields>
+				<text name="title" name_friendly="Heading Title" required="1" list="1" />
+			</fields>
+			
+			<items>
+				<item>
+					<title><![CDATA[A NICE LOOKING HEADLINE]]></title>
+				</item>
+				<item>
+					<title><![CDATA[HEADING B]]></title>
+				</item>
+			</items>
+		</dataset>
+		
+		<dataset name="call_to_action" name_friendly="LP Call to Action">
+			<fields>
+				<text name="title" name_friendly="Button Title" required="1" list="1" sort_table="1" />
+				<text name="text" name_friendly="Button Display Text" required="1" list="1" />	
+				<link name="link" name_friendly="Website Link" list="1" />				
+			</fields>
+			
+			<items>
+				<item>
+					<title><![CDATA[Click Here]]></title>
+					<text><![CDATA[click here!]]></text>
+				</item>
+				<item>
+					<title><![CDATA[Submit It]]></title>
+					<text><![CDATA[Submit!]]></text>
+				</item>
+			</items>
+		</dataset>
+		
+		<dataset name="links" name_friendly="LP Page Links">
+			<fields>
+				<text name="name" name_friendly="Display Name" required="1" list="1" />
+				<text name="title" name_friendly="Link Title" list="1" />
+				<link name="url" name_friendly="URL" list="1" />
+				<sort name="sort" name_friendly="Sort Order" required="1" list="1" sort_table="1" />
+			</fields>
+			
+			<items>
+				<item>
+					<name><![CDATA[Link]]></name>
+					<title><![CDATA[Link]]></title>
+					<url><![CDATA[#]]></url>
+					<sort><![CDATA[1]]></sort>
+				</item>
+				<item>
+					<name><![CDATA[Link]]></name>
+					<title><![CDATA[Link]]></title>
+					<url><![CDATA[#]]></url>
+					<sort><![CDATA[2]]></sort>
+				</item>
+				<item>
+					<name><![CDATA[Link]]></name>
+					<title><![CDATA[Link]]></title>
+					<url><![CDATA[#]]></url>
+					<sort><![CDATA[3]]></sort>
+				</item>
+			</items>
+		</dataset>
+	</ingredients>
+	
+</plate>

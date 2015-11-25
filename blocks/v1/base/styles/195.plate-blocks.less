@@ -1,0 +1,332 @@
+
+.structure {
+	max-width: @container-max-width;
+	background: @content-bg-color;
+	margin: 0px auto;
+}
+
+.z-container { 
+	max-width: @container-max-width; 
+	padding: 0px @default-spacing;
+	background-color: @content-bg-color;
+	margin: 0px auto;
+}
+.structure { 
+	clear:both;
+	padding: 0px;
+	position: relative;
+	
+}
+
+/* header  */
+@blocks-header-color: saturate(lighten(spin(@body-bg-color,-60),64%),18%);
+
+.header-container {
+	
+	background-color: @blocks-header-color;
+	margin-bottom: @default-spacing * 1.8;
+	
+	.header-top{
+		background-color: darken(@blocks-header-color,8%);
+		height: 40px;
+		// to override the social links garnish less
+		.social-links {
+			position: relative;
+			margin: 0px;
+			float:right;
+			margin-top: 6px;
+			li {
+				margin: 0px 2px;
+			}
+		}
+	}
+	
+	.header {
+		margin-bottom: (@default-spacing/2);
+		
+		a.logo {
+			display: block;	
+			margin: 0px auto;
+			margin-top: @default-spacing;
+			width: 100%;
+			text-align:center;
+			
+			img { 
+				width: @logo-max-width;
+			}
+			
+			&:hover {
+				img {
+					.opacity(90);
+				}
+			}
+		}
+		
+		.triangle{
+			background-color: @blocks-header-color;
+			width: @default-spacing * 2;
+			height: @default-spacing * 2;
+			.rotate(45deg);
+			position: absolute;
+			left:50%;
+			margin-left: -@default-spacing;
+			bottom: -@default-spacing * 1;
+			z-index: 0;
+		}
+		
+	}
+}
+/* content  */
+@block-bg-color: desaturate(lighten(@body-bg-color,7%),3%);
+
+.content {   
+	min-height:(@default-spacing*20);  
+	div.block {
+		background: @block-bg-color;//#2A2E3D;
+		height: 226px;
+		overflow:hidden;
+		position: relative;
+		.transition(all @nav-transition-speed @nav-transition-type);
+		
+		&.clickable {
+			
+			&:hover {
+				background: darken(@block-bg-color, 6%);
+				cursor: pointer;
+				
+				.arrow {
+					.opacity(80);
+				}
+			}
+		}
+		
+		@media screen and (max-width: 800px){
+			height: auto;
+			min-height: 220px;
+		}
+
+		.arrow {
+			position:absolute;
+			top:0px;
+			right:0px;
+			width:40px;
+			.opacity(30);
+			.transition(all @nav-transition-speed @nav-transition-type);
+		}
+		
+		p{
+			font-style:italic;
+			padding: 0 @default-spacing;
+		}
+		
+		h1,h2,h3{
+			padding: 0 @default-spacing;
+			padding-top: @default-spacing;
+		}
+		
+		&.image{
+			background-size: cover;
+			background-position: center center;
+		}
+		
+		img.google {
+			display:none;
+		}		
+	}	
+	.image-block {
+		img {
+			width: 48%;
+			float: left;
+			padding-bottom: 10px;
+			&.padded {
+				margin-right: 4%;
+			}
+		
+		}
+	}
+	
+	.menu-item {
+		p{
+			padding: (@default-spacing / 2)	 @default-spacing;
+			background: @block-bg-color;
+		}
+	}
+}
+
+
+
+/* navigation  */
+
+ul#nav { 
+	
+	text-align: center;
+	margin:0px;
+	margin-top:@default-spacing;
+	padding:0px;  
+	line-height:0px;
+	position: relative;
+	z-index: 1;
+	
+	li { 
+		display: inline-table; 
+		list-style:none;  
+		margin:0px; 
+		padding:0px; 
+		padding-bottom: @default-spacing;
+		line-height:0px;
+		outline:0;
+		a { 
+			text-decoration: none;
+			display:block;
+			height:@nav-height;
+			line-height:@nav-height;
+			font-size: @nav-font-size;
+			color: @nav-font-color;
+			font-family: @nav-font;
+			text-transform: uppercase;
+			text-shadow: -1px -1px 0px darken(@blocks-header-color,15%), 1px 1px 0px darken(@blocks-header-color,10%),
+				1px -1px 0px darken(@blocks-header-color,15%), -1px 1px 0px darken(@blocks-header-color,10%);
+			padding: 0px @nav-link-padding-right 0px @nav-link-padding-left;
+			font-weight: 300;
+			margin:0px;
+			outline:0;
+			&:hover{
+				color: @nav-hover-font-color;
+				cursor: pointer;
+				text-shadow: none;
+			}
+		// a style that attaches to the url you are on, the "you are here" class
+			&.at,&.at:hover{
+				color: darken(@blocks-header-color,30%);
+				text-shadow: none;
+				cursor: default;
+				font-weight: 400;
+			}
+	
+	
+		}
+		ul { 
+			display: none; // hides dropdowns
+		}
+
+	}
+}
+
+
+/* footer */
+.footer-container {
+	
+	background-color: @blocks-header-color;
+	margin-top: @default-spacing * 1.8;
+	
+	.footer {
+		padding-bottom: (@default-spacing/2);
+		
+		div{
+			@media screen and (max-width: 800px){
+				text-align: center;	
+			}
+			
+			a.logo {
+				display: block;	
+				margin: 0px auto;
+				width: @logo-max-width * .6;
+				text-align:center;
+				margin-top: @default-spacing * 1.6;
+				position: relative;
+				z-index: 3;	
+				@media screen and (max-width: 800px){
+					padding-top: @default-spacing;	
+				}
+				img { 
+					width: 100%;
+					&:hover{
+						.opacity(90);
+					}
+				}
+			}
+							
+			.social-links{
+				@media screen and (max-width: 800px){
+					text-align: center;	
+					float:none;
+					li{
+						float:none;
+						display: inline-block;
+					}
+				}
+			}
+			
+			.triangle{
+				background-color: @blocks-header-color;
+				width: @default-spacing * 2;
+				height: @default-spacing * 2;
+				.rotate(45deg);
+				position: absolute;
+				left:50%;
+				margin-left: -@default-spacing;
+				top: -@default-spacing * 1;
+				z-index: 0;
+			}
+			
+			ul#nav {
+				text-align:right;
+				padding-top: @default-spacing;
+				position: relative;
+				z-index: 3;
+				@media screen and (max-width: 800px){
+					text-align: center;	
+					padding-top: 0px;
+				}
+				li {
+					
+					padding-bottom: @default-spacing / 2;					
+					
+					a {
+						text-decoration: none;
+						font-shadow: none;
+						font-size: @nav-font-size * .85;
+
+						&.at {
+							font-weight: bold;
+							font-shadow: none;
+						}
+					}
+				}
+				
+				ul {
+					display: none;
+				}
+			}
+		}
+		/* footer copyright */
+		.copyright{ 
+			clear: both; 
+			text-align: right; 
+			font-size: 10px; 
+			padding-right: @default-spacing;
+			color: darken(@blocks-header-color,20%);
+			@media screen and (max-width: 800px){
+				text-align: center;	
+			}
+		}
+		
+	}
+}
+
+
+
+// recipes overrides
+.blog-wrap{
+	background-color: @block-bg-color;
+	padding: @default-spacing;
+}
+
+
+
+// clear
+
+.clear,.floatfix{ clear:both}
+
+.page404 { text-align: center; }
+

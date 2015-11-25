@@ -1,0 +1,72 @@
+/* Typography CSS */
+
+/* header  */
+
+.header {
+	text-align: center;
+	margin-top: 50px;
+	
+	.logo{
+		h1{
+			font-size: @h1-font-size * 1.2;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.navigation {
+	text-align: center;
+	ul#nav {
+		float: none;
+		
+		li a span {
+			display: block;
+		}
+	}
+}
+
+.view-homepage {
+	
+	.content {
+		text-align: center;
+	}
+}
+
+/* content  */
+.content {
+	margin-top: @default-spacing;
+	min-height: @default-spacing * 20;
+	padding-bottom: @default-spacing * 4;
+}
+
+.side-bar{
+	padding: 0px;	
+}
+
+/* footer  */
+
+.footer { 
+	border-top:1px @accent-color solid;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* footer copyright */
+.copyright { 
+	text-align: center;
+	font-size: 10px;
+	color: lighten(@default-font-color, 40%);
+}
+
+// clear
+.clear,.floatfix{ 
+	clear:both
+}
+
+.page404 { 
+	text-align: center; 
+	
+	ul, li {
+		list-style: none !important;
+	}
+}

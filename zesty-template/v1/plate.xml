@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name" required="1">Site Name</text>
+	</clippings>
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="title" name_friendly="Lead in Title" required="1"/>
+				<wysiwyg_advanced name="content" name_friendly="Intro Text"/>
+				<images name="image" name_friendly="Main Image" limit="1"/>
+			</fields>
+			<items>
+				<item link_title="Homepage" path_part="zesty_home">
+					<title>Mentioned An Pepper'[3]</title><content>&lt;h2&gt;It is generally rated at 30,000 to 50,000 Scoville units&lt;/h2&gt;
+					&lt;p&gt;The Capsicum genus is in the nightshade family (Solanaceae)&lt;/p&gt;
+					&lt;ul&gt;
+					&lt;li&gt;To When&lt;/li&gt;
+					&lt;li&gt;Maturity, When&lt;/li&gt;
+					&lt;li&gt;Still It&lt;/li&gt;
+					&lt;li&gt;When While&lt;/li&gt;															
+					&lt;/ul&gt;
+					&lt;p&gt;The cayenne pepper&#x2014;also known as the Guinea spice,[1] cow-horn pepper, aleva, bird pepper,[2] or, especially in its powdered form, red pepper&#x2014;is a hot chili pepper used to flavour dishes&lt;/p&gt;
+					&lt;blockquote&gt;It is red colored when ripened to maturity, but also eaten while still green&lt;/blockquote&gt;
+					&lt;p&gt;It is a cultivar of Capsicum annuum related to bell peppers, jalape&#xF1;os, paprika and othersIt is generally rated at 30,000 to 50,000 Scoville units&lt;/p&gt;</content><image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Thai_peppers.jpg/1024px-Thai_peppers.jpg</image>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>

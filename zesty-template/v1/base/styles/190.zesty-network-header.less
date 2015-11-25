@@ -1,0 +1,155 @@
+// attached 
+
+.zesty-mobile-anchor-nav{
+	position: fixed;
+	height: @network-height * 1.5;
+	line-height: @network-height * 1.5;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 9;
+	background-color: @site-color;
+	color: fade(white,50%);
+	text-align:center;
+	font-size: 14px;
+	text-transform: uppercase;
+	display: none;
+	box-shadow: 0px -1px 3px fade(black,50%);
+	img{
+		position: absolute;
+		height: @network-height * .5;
+		top: @network-height * .5;
+		left: @network-height * .5;		
+	}
+	
+	// fins for dropdowns
+	a.hamburger{
+	
+		width: 30px;
+		position:absolute;
+		right:  0px;
+		padding: 6px 12px 6px 6px;
+		background: darken(@site-color, 5%);
+		div{
+			background: white;
+			border-radius: 5px;
+			width: 100%;
+			height: 3px;
+			margin: 5px 10%;
+		}
+	}	
+	@media all and (max-width: @mobile-break){
+		display: block;	
+	}
+}
+.network-header{
+	position: fixed;
+	width: 100%;
+	top: @network-height;
+	z-index: 5;
+	height: @network-height * 2.5;
+	background-color: @site-color;
+	box-shadow: 0px 2px 4px fade(black,10%); 
+		
+	.demo-button{
+		background-color: darken(saturate(@site-color,5%),14%);
+		&:hover{
+			background-color: darken(@site-color,8%);
+		}
+	}
+	
+	// logo
+	.network-header-text-logo{
+		img{
+			height: @network-height * .8;
+			padding:  (@network-height *.9) (@network-height *.8);
+			// cut the logo size down
+			@media all and (max-width: @mobile-break){
+				height: @network-height * .5;
+				padding:  (@network-height *.5) (@network-height *.5);
+				
+			}
+			
+		}
+	}
+	
+	// main CTA demo button
+	.demo-button{
+		height: @network-height * 2.5;
+		line-height: @network-height * 2.5;
+		padding: 0px @network-height;
+		font-family: @font;
+		font-weight: 400;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: white;
+		
+		display: block;
+		float: right;
+	}
+
+	
+	ul#nav {
+		float: right;
+		margin-top: @network-height;
+		margin-right: @network-height;
+		li {
+			display: inline-block;
+			
+			a, a:visited {
+				letter-spacing: 1px;
+				font-family: @font;
+				font-weight: 400px !important;
+				font-size: 14px;
+				line-height:1;
+				text-transform: uppercase;
+				padding: 0px 16px;
+				
+				&.at, &:hover, &.at:hover {
+					color: white;
+					font-weight: 400px !important;
+				}
+			}
+		}
+	}
+
+	
+	// mobile adjustments
+	@media all and (max-width: @mobile-break){
+		
+		width: 100%;
+		height: auto;
+		top: auto;
+		position: relative;
+		box-shadow: none; 
+		img{
+			display:none;	
+		}
+		.demo-button{
+			float:none;
+			height: auto;
+			border-bottom: 1px fade(black,30%) solid;
+			border-top: 1px fade(black,30%) solid;
+			display:none;
+		}
+		// navigation
+		ul#nav {
+			float: none;
+			margin-top: 0px;
+			margin-right: 0px;
+			width: 100%;
+		
+			
+			li {
+				display: block;
+				a{
+					display: block;	
+					line-height: @network-height * 1.7;
+				}
+			}
+		}
+		
+	}
+	
+	
+}
